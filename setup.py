@@ -7,12 +7,19 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python_utility_functions",
-    version="1.0.2",
+    version="1.0.3",
     author="Daniel Mensing",
     author_email="daniel.mensing@gmx.net",
     description="Utility funtions in python",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/daniel-men/python_utility_functions",
-    packages=setuptools.find_packages()    
+    packages=setuptools.find_packages(),
+    install_requires=[
+        'opencv-python',
+        'pillow',
+        'pydicom',
+        'numpy',
+        'matplotlib'
+    ]    
 )
