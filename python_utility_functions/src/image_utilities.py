@@ -31,7 +31,7 @@ def save_image(image: np.ndarray, path: str):
 def scale(data: np.ndarray, new_min=0, new_max=1) -> np.ndarray:
     maximum = np.max(data)
     minimum = np.min(data)
-    return (new_max - new_min) / (maximum - minimum) * (data - maximum) + new_max
+    return (new_max - new_min) * ((data - minimum) / (maximum - minimum)) + new_min
 
 def create_roi2D(image: np.ndarray, x: int, y: int, roi_size: int) -> np.ndarray:
     size = roi_size // 2
