@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python_utility_functions",
-    version="1.0.3",
+    version="1.0.4",
     author="Daniel Mensing",
     author_email="daniel.mensing@gmx.net",
     description="Utility funtions in python",
