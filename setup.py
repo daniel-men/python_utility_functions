@@ -1,13 +1,11 @@
 import setuptools
 
-import setuptools
-
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="python_utility_functions",
-    version="1.0.4",
+    version="1.0.5",
     author="Daniel Mensing",
     author_email="daniel.mensing@gmx.net",
     description="Utility funtions in python",
@@ -20,6 +18,7 @@ setuptools.setup(
         'pillow',
         'pydicom',
         'numpy',
-        'matplotlib'
+        'matplotlib',
+        'lmdbm'
     ]    
 )
