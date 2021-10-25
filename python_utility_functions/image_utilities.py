@@ -20,7 +20,7 @@ def load_images_grayscale(image_paths: List[str]) -> np.ndarray:
     return np.array([load_grayscale_image(p) for p in image_paths])
 
 def load_image_data_from_dicom(dicom_path: str) -> np.ndarray:
-    return pydicom.dcmread(dicom_path).PixelData
+    return pydicom.dcmread(dicom_path).pixel_array
 
 def load_dicom_images(dicom_paths: List[str]) -> np.ndarray:
     return np.array([load_image_data_from_dicom(path) for path in dicom_paths])
